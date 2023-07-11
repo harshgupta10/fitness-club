@@ -1,0 +1,27 @@
+.header {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    font-weight: 700;
+    text-align: center;
+}
+
+.ClientCard {
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.96;
+    width: auto;
+}
+
+.btnTable {
+    background-color: brown;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #e6e6e6;
+    font-size: calc(3px + 6 * ((100vw - 320px) / 680));
+    padding: 5px;
+    margin-left: 5px;
+}
+
+button[disabled] {
+    opacity: 0.3;
+}

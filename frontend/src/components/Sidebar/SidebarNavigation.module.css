@@ -1,0 +1,115 @@
+.sidebarMenuWrapper {
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.sidebarMenuWrapper .sidebarMenuItem a {
+    text-decoration: none;
+    font-size: calc(2px + 6 * ((100vw - 320px) / 680));
+    color: white;
+    padding-left: calc(8px + 6 * ((100vw - 320px) / 680));
+    padding-right: calc(15px + 6 * ((100vw - 320px) / 680));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.4s;
+    white-space: nowrap;
+    display: flex;
+
+}
+
+
+.sidebarMenuWrapper .sidebarMenuItem:hover {
+    cursor: url("../../Assets/images/kursor.png"), auto !important;
+    background-color: brown;
+    border-radius: 10px;
+    width: 170px;
+}
+
+.sidebarMenuWrapper .sidebarMenuItem:visited {
+    background-color: brown;
+    border-radius: 10px;
+    width: 170px;
+}
+
+.sidebarMenuItem .active {
+    cursor: url("../../Assets/images/kursor.png"), auto !important;
+    background-color: brown;
+    border-radius: 10px;
+    width: 170px;
+}
+
+.sidebarMenuItem a:hover {
+    cursor: url("../../Assets/images/kursor.png"), auto !important;
+}
+
+.sidebarMenuWrapper li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.sidebarMenuWrapper li:last-child {
+    margin-top: 25px;
+}
+
+/*.sidebarMenuWrapper .sidebarMenuItem a:hover .ikona_menu {
+    margin-right: 5px;
+}*/
+
+svg {
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .sidebarMenuWrapper .sidebarMenuItem {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+    }
+}
+
+@media screen and (max-height: 330px) and (max-width: 600px) {
+    .sidebarMenuWrapper .sidebarMenuItem a {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ikona_menu {
+        font-size: 15px;
+    }
+
+    .sidebarMenuItem {
+        margin: 0 !important;
+    }
+
+    .sidebarMenuItem a {
+        font-size: 15px !important;
+    }
+
+    .container-fluid {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .sidebarMenuItem .active {
+        background-color: brown;
+        border-radius: 10px;
+        width: 140px;
+    }
+
+    .sidebarMenuWrapper .sidebarMenuItem a {
+        text-decoration: none;
+        font-size: calc(4px + 5 * ((100vw - 320px) / 680));
+        color: white;
+        padding-left: calc(5px + 6 * ((100vw - 320px) / 680));
+        padding-right: calc(15px + 6 * ((100vw - 320px) / 680));
+        padding-top: 1px;
+        padding-bottom: 1px;
+        transition: all 0.4s;
+        white-space: nowrap;
+        display: flex;
+    }
+}
